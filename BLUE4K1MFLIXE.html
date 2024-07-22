@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUE4K</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="REGISTER.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+<script src="cnt.js"></script>
+
+
+</head>
+
+<body>
+    
+    
+    <header>
+        <a href="#" class="logo">NASSIM</a>
+        <nav class="navigation">
+            <a href="indexo.html"> Offers</a>
+            <a href="index.html">Back</a>
+            
+        </nav>
+        <button class="hamburger">
+            <div class="bar"></div>
+    
+        </button>
+    </header><br><br><br><br><br><br>
+    
+    <nav class="mobile-nav">
+        <a href="indexo.html"> Offers</a>
+        <a href="index.html">Back</a>
+    </nav>
+    <script type="text/javascript" >
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+    </script>
+    
+ 
+    <script data-cfasync="false" "></script><script>
+    
+        const menu_btn = document.querySelector('.hamburger');
+        const mobile_menu = document.querySelector('.mobile-nav');
+    
+    
+    
+        menu_btn.addEventListener('click', function () {
+            menu_btn.classList.toggle('is-active')
+            mobile_menu.classList.toggle('is-active')
+        })
+    
+        document.querySelectorAll('.mobile-navB').forEach(item => {
+            item.addEventListener('click', event => {
+                menu_btn.classList.toggle('is-active')
+                mobile_menu.classList.toggle('is-active')
+            })
+        })
+    
+    </script>
+
+
+    <div class="popup" id="popup">
+        
+        <h2>تم إرسال الطلب    </h2>
+        
+
+        <p><span id="d" > ايها الزبون </span></p>
+        <p><span id="ddd"  > 1100.00DA</span>قم بتعبئة رصيد  </p>
+        <p>  على هذا الرقم  <span> 05.57.09.64.69 </span> </p>
+        <p> ثم ارسل وقت دفع مثل (11:11) في رسالة </p>
+        <p><span>SMS</span></p>
+        <P> وسيصلك رمز الاشتراك  في رسالة </P>
+        <P><span class="red">SMS</span></P>
+       <P class="mini"> ونتصل بك بعد ارسال رمز الإشتراك لتأكد من وصوله إليك</P> 
+        
+        <p><span></span></p>
+        <!--
+        <p >Number </p>
+        <p id="dd" >-----</p>
+
+        <p> Total </p>
+        <p> 2000.00DA</p>-->
+
+        
+        
+
+        
+        <div class="face-load" >
+        
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        
+        </div>
+    </div>
+
+
+    
+    <h1  >BLUE4K</h1>
+    
+    <div class="login" id="login">
+        <h2   id="result"> 1100.00 <span>DA</span></h2>
+        <h3>Flixe</h3>
+        <form id="contact"  method="post">
+         
+            <div class="user-box">
+                <input id="i" type="text"   class="name" autofocus  required>
+                <label for="">الاسم</label>
+            </div>
+    
+            <div class="user-box">
+                <input id="ioio" type="text" class="number"  autofocus  required>
+                <label for="">الهاتف</label>
+            </div>
+            <div class="user-box" >
+                <div class="lbl">
+                    <label  > رقم المدينة</label>
+                </div>
+                <select type="text" id="other" class="city"   required >
+                    <option class="with" value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+        
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+        
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="45">45</option>
+                    <option value="46">46</option>
+                    <option value="47">47</option>
+                    <option value="48">48</option>
+                    <option value="49">49</option>
+                    <option value="50">50</option>
+        
+                    <option value="51">51</option>
+                    <option value="52">52</option>
+                    <option value="53">53</option>
+                    <option value="54">54</option>
+                    <option value="55">55</option>
+                    <option value="56">56</option>
+                    <option value="57">57</option>
+                    <option value="58">58</option>
+                </select>
+            </div>
+            
+            <div class="user-box"  >
+                <div class="lbl">
+                    <label> الكمية</label>
+                </div>
+             
+                <select id="slctScorers" class="kamiya"  type="text"  required >
+                
+                </select>
+             
+            </div>
+            <div class="lol">
+                <input class="lol" type="text"  value="" required >
+            </div>
+            <div class="lol">
+                <input class="lol" type="text"  id="flixe" value="FLIXE" required >
+            </div>
+            <div class="lol">
+                <input class="lol" type="text"  id="ip" value="BLUE4K 1 MONTH" required >
+            </div>
+
+            <button class="btnn" type="submit" onclick="openPopup()" onclick="openLogin()"   >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            إرسال </button>
+            <br><br>
+            
+        </form>
+    </div>
+    <script src="jMYHDs.js"></script>
+
+    <script >
+
+
+        
+        i.oninput = () => {
+            d.innerText = i.value+""
+        }
+        
+        ioio.oninput = () => {
+            dd.innerText = ioio.value+""
+        }
+        
+        slctScorers.oninput = () => {
+            ddd.innerText = slctScorers.value+"DA"
+        }
+            
+        
+        const scorers = [
+            { name: "(1) 1 MONTH BLUE4K", goals: "(1)1100.00" },
+            { name: "(2) 1 MONTH BLUE4K", goals: "(2)2200.00" },
+            { name: "(3) 1 MONTH BLUE4K", goals: "(3)3300.00" },
+        ];
+        scorers.forEach((scorer) => {
+            let o = document.createElement("option");
+            o.text = scorer.name;
+            o.value = scorer.goals;
+            slctScorers.appendChild(o);
+        });
+        
+        
+        
+        slctScorers.onchange = function() {
+            result.innerText=slctScorers.value+"DA";
+        };
+        
+        </script>
+</body>
+
+
+</html>

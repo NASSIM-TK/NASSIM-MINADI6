@@ -1,0 +1,486 @@
+
+    
+        html {
+            height: 100%;
+        }
+        
+        *{
+        font-family: 'Cairo', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        
+        .whatsapp_float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            border: none;
+        }
+        .whatsapp-icon {
+            margin-top: 5px;
+        }
+        
+          /* for mobile */
+          @media screen and (max-width: 767px){
+            .whatsapp-icon {
+              margin-top: 5px;
+            }
+            .whatsapp_float {
+              width: 40px;
+              height: 40px;
+              bottom: 20px;
+              right: 10px;
+              font-size: 22px;
+            }
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: linear-gradient(#141e30, #2a6c56);
+        }
+        
+        .login-box {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            width: 400px;
+            padding: 40px;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .login-box h2 {
+            margin: 30px 0 30px;
+            padding: 0;
+            color: #03f484;
+            text-align: center;
+        }
+        
+        .login-box .user-box {
+            position: relative;
+        }
+        
+        .login-box .user-box input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #e4d020;
+            margin-bottom: 30px;
+            outline: none;
+            background: transparent;
+            border-bottom: 2px solid #03f484;
+        }
+        
+        .login-box .user-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+        
+        .login-box .user-box input:focus~label,
+        .login-box .user-box input:valid~label {
+            top: -20px;
+            left: 0;
+            color: #03f484;
+            font-size: 12px;
+        }
+        
+        .login-box form a {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #03f484;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: 0.5s;
+            margin-top: 40px;
+            letter-spacing: 4px;
+        }
+        
+        .login-box a:hover {
+            background: #03f484;
+            color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03f484, 0 0 25px #03f484, 0 0 50px #03f484, 0 0 100px #03f484;
+        }
+        
+        .login-box a span {
+            position: absolute;
+            display: block;
+        }
+        
+        .login-box a span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #03f484);
+            animation: btn-anim1 1s linear infinite;
+        }
+        
+        @keyframes btn-anim1 {
+            0% {
+                left: -100%;
+            }
+            50%,
+            100% {
+                left: 100%;
+            }
+        }
+        
+        .login-box a span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #03f484);
+            animation: btn-anim2 1s linear infinite;
+            animation-delay: 0.25s;
+        }
+        
+        @keyframes btn-anim2 {
+            0% {
+                top: -100%;
+            }
+            50%,
+            100% {
+                top: 100%;
+            }
+        }
+        
+        .login-box a span:nth-child(3) {
+            bottom: 0;
+            right: 100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #03f484);
+            animation: btn-anim3 1s linear infinite;
+            animation-delay: 0.5s;
+        }
+        
+        @keyframes btn-anim3 {
+            0% {
+                right: -100%;
+            }
+            50%,
+            100% {
+                right: 100%;
+            }
+        }
+        
+        .login-box a span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #03f484);
+            animation: btn-anim4 1s linear infinite;
+            animation-delay: 0.75s;
+        }
+        
+        @keyframes btn-anim4 {
+            0% {
+                bottom: -100%;
+            }
+            50%,
+            100% {
+                bottom: 100%;
+            }
+        }
+
+.btnpush {
+    padding: 8px 20px;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 15px;
+    text-transform: uppercase;
+    margin: 15px;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    border:  1px solid #00fffc;
+}
+
+.btnpush::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent,
+    #00fffc, transparent);
+    transform: translateX(-100%);
+    transition: 0.6s;
+    position: absolute; 
+
+}
+
+.btnpush:hover {
+    background: transparent;
+    box-shadow:  0 0 20px 5px #00fffc;
+}
+
+.btnpush:hover::before {
+    transform: translateX(100%);
+}
+
+
+
+/*3*/
+.btnpush:nth-child(3) {
+    border:  1px solid #09f815;
+}
+
+.btnpush:nth-child(3)::before {
+    background: linear-gradient(120deg, transparent, #09f815, transparent);
+}
+
+.btnpush:nth-child(3):hover {
+    box-shadow: 0 0 20px 5px #09f815;
+}
+
+/*4*/
+.btnpush:nth-child(4) {
+    border:  1px solid #f82121;
+}
+
+.btnpush:nth-child(4)::before {
+    background: linear-gradient(120deg, transparent, #f82121, transparent);
+}
+
+.btnpush:nth-child(4):hover {
+    box-shadow: 0 0 20px 5px #f82121;
+}
+
+/*5*/
+.btnpush:nth-child(5) {
+    border:  1px solid #f8e321;
+}
+
+.btnpush:nth-child(5)::before {
+    background: linear-gradient(120deg, transparent, #f8e321, transparent);
+}
+
+.btnpush:nth-child(5):hover {
+    box-shadow: 0 0 20px 5px #f8e321;
+}
+
+.login-box img {
+    width: 100px;
+    margin-top: -100px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 327px){
+
+    h2 {
+        font-size: 20px;
+    }
+    .login-box {
+        width: 280px;
+        height: 440px;
+    }
+
+}
+@media (max-width: 344px){
+
+h2 {
+    font-size: 20px;
+}
+.login-box {
+    width: 80%;
+
+}
+}
+@media (max-width: 430px){
+
+h2 {
+    font-size: 25px;
+}
+.login-box {
+    width: 85%;
+
+}
+
+}
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  1px 200px;
+
+}
+.logo {
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navigation a {
+    color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+
+}
+.nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+
+.hamburger{
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+
+.hamburger.is-active:after{
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+.hamburger.is-active .bar{
+    opacity: 0;
+}
+
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: #0c0c36;
+    padding-top: 120px;
+    transition: 0.4s;
+    background: url(images/go4.png) no-repeat;
+}
+
+.mobile-nav a{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 16px;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #000;
+    text-decoration: none;
+    background-color: #ffffff;
+
+}
+
+.mobile-nav a:hover{
+    background-color: rgb(234, 234, 234);
+}
+
+
+
+.mobile-navAr.is-active {
+    right: 0;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+
+
+@media (max-width:1023px){
+
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+}
+    
+@media (max-width: 767px){
+    .navigation a{
+        display: none;
+    }
+    .logo{
+        font-size: 2em;
+        padding-left:50px;
+        font-weight: 900;
+    }
+}
+    
+    
+    
+@media (min-width: 768px){
+    .mobile-nav{
+        display: none;
+    }
+
+    .hamburger{
+        display: none;
+    }
+}

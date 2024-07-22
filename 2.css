@@ -1,0 +1,9 @@
+.btn-dark {
+  color: #ffffff;
+  background-color: #383340;
+  border-color: transparent !important;
+}
+.btn {
+  padding: 10px 24px;
+  border-width: 2px;
+}
